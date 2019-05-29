@@ -1,0 +1,61 @@
+{
+  "pages": [
+    
+    
+    
+    
+    "pages/cooperate/cooperate",
+    "pages/logs/logs",
+
+
+    "pages/child/child",
+    "pages/project/project",
+    "pages/about/about",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "金诚科创软件开发",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#479de6",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/iconfont-home.png",
+        "selectedIconPath": "images/iconfont-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/iconfont-list.png",
+        "selectedIconPath": "images/iconfont-list-active.png",
+        "text": "关于我们"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "iconPath": "images/iconfont-cart.png",
+        "selectedIconPath": "images/iconfont-cart-active.png",
+        "text": "产品研发"
+      },
+      {
+        "pagePath": "pages/child/child",
+        "iconPath": "images/iconfont-user.png",
+        "selectedIconPath": "images/iconfont-user-active.png",
+        "text": "少儿频道"
+      },
+      {
+        "pagePath": "pages/cooperate/cooperate",
+        "iconPath": "images/iconfont-coop1.png",
+        "selectedIconPath": "images/iconfont-coop.png",
+        "text": "合作渠道"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

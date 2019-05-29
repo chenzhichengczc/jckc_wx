@@ -1,0 +1,34 @@
+<!--pages/child/child.wxml-->
+<import src="../../templates/template.wxml" />
+
+<view class='page'>
+
+  <template is='headTemp' data='{{logoUrl}}' />
+
+  <view class='container'>
+
+    <view class='page__hd'>
+      <swiper indicator-dots='{{indicator-dots}}' autoplay='{{autoplay}}' interval='{{interval}}' indicator-dots='{{indicator-dots}}'>
+        <block wx:for="{{imgUrls}}" wx:key="index">
+          <swiper-item>
+            <cover-image src='{{item}}'></cover-image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='textArea'>
+      <view class='title'>少儿研讨服务宗旨理念</view>
+      <view class='node'> 鲸准研究院报告显示，2017年全年有30家编程项目成立，达历史最高值。截至2018年7月15日，2018年少儿编程公司的成立数量仍保持较高水平。 而我国少儿编程教育市场共发生58笔融资事件，总额超14亿元。自2014年起，陆续由企业获得融资，融资数量和金额呈现逐年增长趋势；尤其2017年之后，项目融资有了陡增趋势，资本开始在此领域布局。</view>
+    </view>
+
+
+    <view class='footerTemp'>
+      <template is='linkTemp' data='{{footerLogo}}' />
+    </view>
+
+
+
+  </view>
+
+</view>

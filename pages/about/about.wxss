@@ -1,0 +1,67 @@
+/* pages/about/about.wxss */
+
+@import "../../app.wxss";
+
+.container{
+  position: relative;
+  display: flex
+}
+
+.item1Img{
+  position: absolute;
+  left: 100rpx;
+  top: 110rpx;
+  width: 150rpx;
+}
+
+.item1Text{
+  position: absolute;
+  top: 35rpx;
+  left: 310rpx;
+  width: 400rpx;
+}
+
+.introText{
+  font-size: 24rpx;
+}
+
+.textJZ{
+  text-align: center;
+}
+
+.textSize{
+  font-size: 22rpx;
+}
+
+
+.item2Img{
+  position: absolute;
+  left: 100rpx;
+  top: 490rpx;
+  width: 150rpx;
+}
+
+.item2Text{
+  position: absolute;
+  top: 380rpx;
+  left: 310rpx;
+  width: 400rpx;
+}
+
+.item3Img{
+  position: absolute;
+  left: 100rpx;
+  top: 820rpx;
+  width: 150rpx;
+}
+
+.item3Text{
+  position: absolute;
+  top: 780rpx;
+  left: 310rpx;
+  width: 400rpx;
+}
+
+.footerTemp{
+  margin-top: 1100rpx;
+}

@@ -1,0 +1,56 @@
+<!--pages/project/project.wxml-->
+<import src="../../templates/template.wxml" />
+<view class='page'>
+
+  <!-- 引入模板 -->
+  <template is='headTemp' data='{{logoUrl}}' />
+
+  <template is='bannerTemp' data='{{bannerUrl}}' />
+
+  <view class="container">
+    
+    <scroll-view class='scroll_left' scroll-y="true">
+      <view class="nav_left"> 
+         <block wx:for="{{list}}" wx:for-index="idx" wx:for-item="itemName" wx:key="id"> 
+          <!--当前项的id等于item项的id，那个就是当前状态-->  
+          <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开右侧侧滑栏使用-->
+           <view class="nav_left_items {{curNav == idx ? 'active' : ''}}" 
+           bindtap="switchRightTab" data-index="{{idx}}" 
+           data-id="{{itemName.id}}" id="{{idx}}">{{itemName.text1}}</view>  
+         </block>
+      </view>
+    </scroll-view>
+
+    <!--右侧栏-->
+    <!--如果使用 scroll-into-view 属性，必须设置 scroll-view 的高度，且最好是动态获取屏幕高度 -->
+    <!-- scroll-into-view 属性 值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素 -->
+  
+    <scroll-view scroll-y="true" style="height: 1100rpx" scroll-top="{{scrollTop}}" scroll-into-view="{{'inToview'+rigId}}" scroll-with-animation="true" class='scroll_right'>
+      <view class="nav_right">      
+        <block wx:for="{{list2}}" wx:for-list="item" wx:key="id"> 
+          <view class='itemTitle' id="{{'inToview'+item.id}}">{{item.title}}</view>  
+          <view bindtap='particulars' class='listItem' data-id='{{item.id}}'>
+            <block wx:for="{{item.project}}" wx:key="project">
+              <view class='listItem2' data-text="{{}}">
+                <view class='img'>
+                  <image src='{{item.imgUrl}}'></image>
+                </view>
+                <view class='listText'>
+                  <text class='text'>{{item.text}}</text>
+                  <text class='money'>权值:¥{{item.money}}</text>
+                  <text class='charge'>负责人:{{item.charge}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+
+    <view class='footerTemp'>
+     <template is='linkTemp' data='{{footerLogo}}' />
+    </view>
+
+  </view>
+
+</view>

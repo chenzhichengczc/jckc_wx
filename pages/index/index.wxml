@@ -1,0 +1,23 @@
+<import src="../../templates/template.wxml"/>
+<view class='page'>
+
+  <!-- 引入模板 -->
+  <template is='headTemp' data='{{logoUrl}}'/>
+
+
+  <view class='page__hd'>
+    <swiper indicator-dots='{{indicator-dots}}' autoplay='{{autoplay}}' interval='{{interval}}'
+    indicator-dots='{{indicator-dots}}'>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <cover-image src='{{item}}'></cover-image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <template is='linkTemp' data='{{footerLogo}}'/>
+
+  <template is='footTextTemp'/>
+  
+</view>

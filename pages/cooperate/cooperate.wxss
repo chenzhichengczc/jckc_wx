@@ -1,0 +1,32 @@
+/* pages/cooperate/cooperate.wxss */
+@import "../../app.wxss";
+
+.contractTitle{
+  position: absolute;
+  top: 500rpx;
+  left: 300rpx;
+  font-size: 44rpx;
+  color:black;
+  font-weight: bold;
+}
+
+.contractForm{
+  position: absolute;
+  top : 600rpx;
+  left: 180rpx;
+}
+
+.contractForm input{
+  border: 1px solid grey;
+  margin-top: 20rpx;
+}
+
+.sub{
+  position: absolute;
+  top : 450rpx;
+  left: 50rpx;
+}
+
+.footerTemp{
+  margin-top: 800rpx;
+}

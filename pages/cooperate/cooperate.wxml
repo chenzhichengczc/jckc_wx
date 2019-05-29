@@ -1,0 +1,28 @@
+<!--pages/cooperate/cooperate.wxml-->
+<import src="../../templates/template.wxml" />
+
+<view class='page'>
+
+  <template is='headTemp' data='{{logoUrl}}' />
+
+  <template is='bannerTemp' data='{{bannerUrl}}' />
+
+  <view class='contractTitle'>联系我们</view>
+
+  <view class='formArea'>
+    <form class='contractForm'>
+      <input placeholder='姓名'/>
+      <input placeholder='手机号码'/>
+      <input placeholder='邮箱'/>
+      <input placeholder='职业'/>
+      <input placeholder='信息'/>
+
+      <button type="primary" class='sub'> 静候我们联系 </button>
+    </form>
+  </view>
+
+    <view class='footerTemp'>
+      <template is='linkTemp' data='{{footerLogo}}' />
+    </view>
+
+</view>

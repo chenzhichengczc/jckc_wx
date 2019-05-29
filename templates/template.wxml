@@ -1,0 +1,43 @@
+<template name="headTemp">
+    <view class='weui-cells' id="title">
+    <text id='titleText'>欢 迎 联 系  (+020) 136 3240 9608</text>
+    <text id="titleRight">技 术 / 创 新</text>
+  </view>
+
+  <view id="logoArea">
+    <cover-image src='{{logoUrl}}' id='logoUrl'></cover-image>
+  </view>
+</template>
+
+
+<template name='linkTemp'>
+   <view class="page__bd" id="page__bd">
+    <image src='{{footerLogo}}' id='footerLogo'></image>
+    <text id="links">Quick Links</text>
+    <text id="content">联系 / 方式</text>
+    <text id="homePage">首    页</text>
+    <text id="aboutPage">关于我们</text>
+    <text id="projectPage">产品研发</text>
+    <text id="childPage">少儿频道</text>
+    <text id="cooperatePage">合作渠道</text>
+    <text id="address">地址 (Address)</text>
+    <text id="addressDetail">员岗七号小镇 - F栋106座</text>
+    <text id="phone">电话 (Phone)</text>
+    <text id="phoneDetail">+020 136 3240 9608</text>
+    <text id="email">邮件 (E-mail)</text>
+    <text id="emailDetail">178642170@qq.com</text>
+  </view>
+</template>
+
+<template name='footTextTemp'>
+   <view id="footTextBlock">
+    <view class="weui-footer__text">Copyright  2019 广州金诚科创软件开发有限公司</view>
+    <view class="weui-footer__text">All rights Reserved 粤ICP备 19048812号</view>
+  </view>
+</template>
+
+<template name='bannerTemp'>
+  <view class='bannerView'>
+    <cover-image src='{{bannerUrl}}'></cover-image>
+  </view>
+</template>

@@ -1,0 +1,71 @@
+<!--pages/about/about.wxml-->
+
+<import src="../../templates/template.wxml" />
+
+<view class='page'>
+
+  <template is='headTemp' data='{{logoUrl}}' />
+
+  <template is='bannerTemp' data='{{bannerUrl}}' />
+
+  
+  <view class='container'>
+      <view class='item1Img'>
+        <cover-image src='{{item1Url}}'></cover-image>
+        <text class='introText'>软件定制服务</text>
+      </view>
+      <view class='item1Text introText'>
+        <!--
+        <text decode="{{true}}" class='textSize'>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item1Text}}
+        </text>
+        -->
+        <text class='textSize' decode="{{true}}">
+          &nbsp;&nbsp;• 功能强大灵活，模块扩展容易；
+          &nbsp;&nbsp;• 支持B/S，C/S架构；
+          &nbsp;&nbsp;• 可控性强，流程步骤一目了然；
+          &nbsp;&nbsp;• 贴近客户个性化需求，服务周详；
+          &nbsp;&nbsp;• 实用性强，操作简捷，操作便捷;
+          &nbsp;&nbsp;• 项目开发周期短，实施费用合理；
+          &nbsp;&nbsp;• 后续服务方便捷，享受贴心服务；
+        </text>
+      </view>
+
+
+    <view class='item2Img'>
+      <cover-image src='{{item2Url}}'></cover-image>
+      <text class='introText'>少儿技术研讨</text>
+    </view>
+
+    <view class='item2Text introText'>
+      <text class='textSize' decode="{{true}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;金诚科创注重少儿互助启蒙形式，注重以讨论，一对一讲授，动手解决能力，传递前沿技术，提问互动等形式，让小朋友了解编程世界的美妙
+        &nbsp;&nbsp;• 可玩性飞机大战/坦克大战/我的世界；
+        &nbsp;&nbsp;• 模仿淘宝/ 京东/ 阿里巴巴页面搭建；
+        &nbsp;&nbsp;• 二维码设计 / 二维码小知识；
+        &nbsp;&nbsp;• 素质培养 / 能力培养 / 机器人大战；
+      </text>
+      
+    </view>
+
+    <view class='item3Img'>
+      <cover-image src='{{item3Url}}'></cover-image>
+      <text class='introText'>品牌定制设计</text>
+    </view>
+    <view class='item3Text introText'>
+     <text class='textSize' decode="{{true}}">
+        &nbsp;&nbsp;• 企业级别设计方案；
+        &nbsp;&nbsp;• Logo设计 / 个人 / 企业；
+        &nbsp;&nbsp;• UI 平面设计图；
+        &nbsp;&nbsp;• UE 交互设计；
+        &nbsp;&nbsp;• 三折页 / Banner / 易拉宝；
+      </text>
+    </view>
+  </view>
+
+  <view class='footerTemp'>
+    <template is='linkTemp' data='{{footerLogo}}' />
+  </view>
+  
+
+</view>
